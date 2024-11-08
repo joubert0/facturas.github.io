@@ -1,31 +1,89 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Facturas Technology</title>
-        <link rel="stylesheet" href="./styles/style.css">
-        <script src="./scripts/master.js"></script>
+        <title>Facturas</title>
+        <link rel="stylesheet" href="./styles/styles.css">
+        <link rel="icon" href="media/facturas.png" type="image/x-icon">
     </head>
     <body>
         <header>
-            
+            <img src="./media/facturas.png" alt="logo facturas" class="logo">
+            <h1>FacturasTech</h1>
+            <nav>
+                <ul>
+                    <li><a href="#Nosotres">Inicio</a></li>
+                    <li><a href="#Proyectos">Proyectos</a></li>
+                    <li><a href="#Participantes">Miembros</a></li>
+                    <li><a href="#Formulario">Formulario</a></li>
+                </ul>
+            </nav>
         </header>
         <main>
-            <h1 class="name">Facturas Technology</h1>
-            <p class="members">
-                <a class="members" target="_blank" href="https://github.com/cain231">Cain</a>
-                 - 
-                <a class="members" target="_blank" href="https://github.com/joubert0">Joubert</a>
-                 - 
-                <a class="members" target="_blank" href="https://github.com/Matimontecino12">Montecino</a>
-                 - 
-                Rodriguez</p>
-            <p class="const">En construcción</p>
-            <a class="contact" href="mailto:facturas.cjmr@gmail.com">facturas.cjmr@gmail.com</a>
+            <section id="Nosotres">
+                <article id="texto">
+                    <h3>Nosotros</h3>
+                    <p>Somos un equipo compacto y apasionado de desarrolladores conformado por Matías, Valentín, Juan y Jason. Juntos, combinamos nuestras habilidades y experiencias para resolver problemas, desarrollar software innovador y aprender continuamente en el mundo de la programación. Cada uno de nosotros aporta una perspectiva única, lo que nos permite enfrentar desafíos con creatividad y eficiencia. Nuestra colaboración se basa en el respeto, el entusiasmo por la tecnología y el compromiso con la calidad en todo lo que hacemos.</p>
+                </article>
+                <article id="imagenes">
+                    <h3>Nosotros</h3>
+                    <img src="./media/deebd5a83cb132993ad7157026373b11.PNG" alt="Imagen 2">
+                </article>                
+            </section>
+            <hr>
+            <section id="Proyectos">
+                <h2>Nuestros Proyectos</h2>
+                <article class="Construccion">
+                    <h3>En Construcción</h3>
+                    <img src="./media/construccion1.png" class="construccion">
+                    <img src="./media/construccion2.png" class="construccion">
+                    <img src="./media/construccion3.png" class="construccion">
+                </article>
+            </section>
+            <hr>
+            <section id="Participantes">
+                <article class="persona">
+                    <h3><a class="miembros" href="https://github.com/cain231" target="_blank">Jason Cain</a></h3>
+                </article>
+                <article class="persona">
+                    <h3><a class="miembros" href="https://github.com/joubert0" target="_blank">Juan Joubert</a></h3>
+                </article>
+                <article class="persona">
+                    <h3><a class="miembros" href="https://github.com/Matimontecino12" target="_blank">Matias Montecino</a></h3>
+                </article>
+                <article class="persona">
+                    <h3><a class="miembros" href="https://github.com/SebaR-22" target="_blank">Valentin Rodriguez</a></h3>
+                </article>
+            </section>
+            <hr>
+            <section id="Formulario">
+                <form action="">
+                    <h3>Formulario</h3>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                    <input type="email" id="correo" name="correo" placeholder="Correo electrónico" required>
+                    <input type="text" id="asunto" name="asunto" placeholder="Asunto" required>
+                    <textarea id="mensaje" name="mensaje" rows="4" placeholder="Mensaje" required></textarea>
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Borrar</button>
+                </form>
+            </section>
         </main>
-        <footer>
 
+        <hr>
+        
+        <section id="arrows">
+            <div id="Up" class="cuadrado"></div>
+            <div id="Down" class="cuadrado"></div>
+            <div id="Left" class="cuadrado"></div>
+            <div id="Right" class="cuadrado"></div>
+        </section>
+
+        <footer>
+            <p>Contacto: <a href="mailto:facturas.cjmr@gmail.com">facturas.cjmr@gmail.com</a></p>
+            <p>&copy; FacturasTech. Todos los derechos reservados.</p>
         </footer>
+
+        <script src="./scripts/script.js"></script>
     </body>
 </html>
